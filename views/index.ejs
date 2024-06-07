@@ -64,6 +64,7 @@
 
     #get {
       background-color: #2ecc71;
+      transition: background-color 0.2s ease-in-out;
     }
 
     #get:hover {
@@ -72,6 +73,7 @@
 
     #post {
       background-color: #3498db;
+      transition: background-color 0.2s ease-in-out;
     }
 
     #post:hover {
@@ -80,6 +82,7 @@
 
     #put {
       background-color: #9b59b6;
+      transition: background-color 0.2s ease-in-out;
     }
 
     #put:hover {
@@ -88,6 +91,7 @@
 
     #patch {
       background-color: #f1c40f;
+      transition: background-color 0.2s ease-in-out;
     }
 
     #patch:hover {
@@ -96,10 +100,20 @@
 
     #delete {
       background-color: #e74c3c;
+      transition: background-color 0.2s ease-in-out;
     }
 
     #delete:hover {
       background-color: #c0392b;
+    }
+
+    #guide {
+      background-color: #f959ff;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #guide:hover {
+      background-color: #c62bfe;
     }
   </style>
 </head>
@@ -127,7 +141,13 @@
       <input id="put" type="submit" value="PUT" formaction="/put-secret">
       <input id="patch" type="submit" value="PATCH" formaction="/patch-secret">
       <input id="delete" type="submit" value="DELETE" formaction="/delete-secret">
+      <input id="guide" type="submit" value="Guide" formaction="/guide">
     </form>
+    <div class="info-about-api">
+      <h2>Try making different kinds of requests to the public API of AppBrewery - Secrets API.</h2>
+      <p>We will be making API requests using my Bearer Token.</p>
+      <p>Try to GET a secret using id or maybe create a new one using POST method. You will receive JSON as a response. The difference between PUT and Patch is that when making PUT request, you will be updating each value, as in PATCH request, you will be updating only the value you send.</p>
+    </div>
   </div>
 </body>
 

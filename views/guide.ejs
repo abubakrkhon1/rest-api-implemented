@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="submit"] {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    #guide {
+      background-color: #ff8b59;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #guide:hover {
+      background-color: #fd7840;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="info-about-api">
+      <h2>This tutorial will help you get to know REST API. For this tutorial, we will be using public API of AppBrewery - Secrets API.</h2>
+      <p>Making API requests may require authentication. Here is the list of all possible authentications.</p>
+      <ol>
+        <li>No authentication</li>
+        <li>Basic Authentication - username and password.</li>
+        <li>API Key Authorisation - authorising using API key provided by API provider.</li>
+        <li>Token Based Authorisation - API tokens incorporate the user account in the access token.</li>
+      </ol>
+      <p>I have received Bearer Token from the API and will be sending it as a header when making axios requests.</p>
+      <p>Let's start our tutorial!</p>
+    </div>
+    <form id="myForm" method="get">
+      <input id="guide" type="submit" value="Take me to tutorial" formaction="/">
+    </form>
+  </div>
+</body>
+
+</html>

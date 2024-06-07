@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { content: "Waiting for data..." });
 });
 
+app.post("/guide", (req,res)=>{
+  res.render("guide.ejs");
+});
+
 app.post("/get-secret", async (req, res) => {
   const searchId = req.body.id;
   try {
